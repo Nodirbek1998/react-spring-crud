@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 export class PersonService{
-    baseUrl = "http://localhost/api/user";
+    baseUrl = "https://spring-boot-person.herokuapp.com/api/user";
 
     getAll(){
         return axios.get(this.baseUrl).then(res => res.data);
